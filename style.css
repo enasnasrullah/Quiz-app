@@ -1,0 +1,45 @@
+body {
+  background-color: #ecf5ff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#home h1 {
+  font-size: 60px;
+  font-weight: 700;
+  color: blue;
+}
+a {
+  text-decoration: none;
+}
+.button {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  border: 2px solid blue;
+  background-color: white;
+  color: blue;
+  margin-bottom: 10px;
+}
+.button:hover {
+  cursor: pointer;
+  transform: translateX(10px);
+  transition: transform 1s;
+}
+#game h2 {
+  color: blue;
+}
+.choice-prefix {
+  background-color: blue;
+  padding: 10px 20px;
+  color: white;
+  margin-bottom: 0;
+}
+.choice-text {
+  padding: 10px 20px;
+  margin: 0;
+}
+.choice-container:hover {
+  cursor: pointer;
+  transform: translateX(10px);
+  transition: transform 1s;
+}
