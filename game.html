@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Play</title>
+    <title>StartQuiz</title>
     <!-- Bootstrap cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <!-- style  -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
     <div class="container">
@@ -27,26 +27,45 @@
           vh-100
         "
       >
+        <div id="hud" class="d-flex">
+          <div id="hud-item">
+            <p class="hud-prefix text-center">Question</p>
+            <h6 class="hud-main-text" id="questionCounter">1/3</h6>
+          </div>
+          <div id="hud-item">
+            <p class="hud-prefix text-center">Score</p>
+            <h6 class="hud-main-text" id="score">0</h6>
+          </div>
+        </div>
         <h2 class="m-3 text-center" id="question">
           What is the answer to this questions?
         </h2>
         <div class="choice-container d-flex mb-1 border bg-white w-100">
           <p class="choice-prefix">A</p>
-          <p class="choice-text">choice-1</p>
+          <p class="choice-text" data-number="1">choice-1</p>
         </div>
         <div class="choice-container d-flex mb-1 border bg-white w-100">
           <p class="choice-prefix">B</p>
-          <p class="choice-text">choice-2</p>
+          <p class="choice-text" data-number="2">choice-2</p>
         </div>
         <div class="choice-container d-flex mb-1 border bg-white w-100">
           <p class="choice-prefix">C</p>
-          <p class="choice-text">choice-3</p>
+          <p class="choice-text" data-number="3">choice-3</p>
         </div>
         <div class="choice-container d-flex mb-1 border bg-white w-100">
           <p class="choice-prefix">D</p>
-          <p class="choice-text">choice-4</p>
+          <p class="choice-text" data-number="4">choice-4</p>
         </div>
       </div>
     </div>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script  -->
+
+    <script src="script/game.js"></script>
   </body>
 </html>

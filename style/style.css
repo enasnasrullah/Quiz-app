@@ -1,6 +1,8 @@
 body {
   background-color: #ecf5ff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 600px;
+  margin: auto;
 }
 #home h1 {
   font-size: 60px;
@@ -19,6 +21,7 @@ a {
   background-color: white;
   color: blue;
   margin-bottom: 10px;
+  width: 300px;
 }
 .button:hover {
   cursor: pointer;
@@ -42,4 +45,25 @@ a {
   cursor: pointer;
   transform: translateX(10px);
   transition: transform 1s;
+}
+.correct {
+  background-color: #28a745 !important;
+}
+.incorrect {
+  background-color: #dc3545 !important;
+}
+#hud-item {
+  margin-right: 50px;
+  text-align: center;
+}
+.hud-prefix {
+  color: blue;
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+}
+#finalScore,
+#highScore {
+  color: blue;
+  font-size: 29px;
 }
